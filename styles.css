@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.bgtext{
+    background-color: white;
+    border-radius: 2em;
+    border: solid black 4px;
+    padding: 2rem;
+    margin: 1rem;
+    -webkit-box-shadow: 12px 12px 14px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow:    12px 12px 14px 0px rgba(255, 255, 255, 0.75);
+    box-shadow:         12px 12px 14px 0px rgba(255, 255, 255, 0.75);
+}
+
+main{
+    padding-left:4rem;
+    padding-right:4rem;
+    margin: 0 auto;
+}
+img{
+    display:block;
+    margin:auto;
+    width: 20%;
+    border-radius: 2em;
+    -webkit-box-shadow: 12px 12px 14px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    12px 12px 14px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         12px 12px 14px 0px rgba(50, 50, 50, 0.75);
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+input,textarea{
+    width   : 15rem;
+    height  : 2rem;
+    border-radius: 0.4em;
+    font-size: 1.5em;
+    padding:0.4em;
+    font-family: 'Ubuntu', sans-serif;
+}
+button{
+    width   : 16rem;
+    height  : 3rem;
+    border-radius: 0.4em;
+    background-color:gray;
+    color: black;
+    font-size: 1.4em;
+    font-family: 'Ubuntu', sans-serif;
+}
+.text{
+    padding-left: 2.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    .text{
+        padding-left: 0;
+    }
+    img{
+        display:block;
+        margin:auto;
+        width: 60%;
+        border-radius: 2em;
+        -webkit-box-shadow: 12px 12px 14px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    12px 12px 14px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:         12px 12px 14px 0px rgba(50, 50, 50, 0.75);
+    }
+    button{
+        width   : 15rem;
+        height  : 3rem;
+        border-radius: 0.4em;
+        background-color:gray;
+        color: black;
+        font-size: 1.4em;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
