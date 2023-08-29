@@ -1,6 +1,6 @@
 const US = {
     title: "I'm Juan Pablo",
-    about: "Desarrollador de software con más de 6 años de experiencia en diseño, desarrollo y pruebas deaplicaciones web. Tengo experiencia programando en lenguajes como Python, Javascript y Bash.Competente en la administración de bases de datos MySQL, Oracle y MongoDB, así como experiencia en laimplementación y administración de aplicaciones en entornos de nube Azure, Digital Ocean o servidores linux."
+    about: "Software developer with more than 6 years of experience in design, development and testing of web applications. I have experience programming in languages such as Python, Javascript and Bash Scripting. Proficient in MySQL, Oracle and MongoDB database administration, as well as experience deploying and managing applications in Azure cloud environments, Digital Ocean or linux servers."
   };
   
 export default US;

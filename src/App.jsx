@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Text, Box, ButtonGroup, Grid, HStack } from '@chakra-ui/react'
-import { TypeAnimation } from 'react-type-animation';
 import ReactFlagsSelect from "react-flags-select";
 import { FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa6";
 import US from './langs/us';
@@ -23,7 +22,7 @@ function App() {
 
   return (
       <Box p={0}>
-      <Grid templateColumns={{ base: '1fr', lg: '1fr 1fr' }} gap={4} alignItems="center">
+      <Grid templateColumns={{ base: '1fr', lg: '1fr 1fr' }} gap={4}>
         <Box>
         <ButtonGroup gap='2'>
             <ReactFlagsSelect
