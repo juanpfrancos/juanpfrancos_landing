@@ -30,7 +30,7 @@ function App() {
             onSelect={onSelect}
             showSelectedLabel={showSelectedLabel}
             showOptionLabel={showOptionLabel}
-            countries={["PT", "US", "ES"]}
+            countries={["US","ES","PT"]}
             searchable={searchable}
             placeholder={language}
             />
@@ -40,7 +40,7 @@ function App() {
             <Text
               bgGradient='linear(to-l, #000, #fff)'
               bgClip='text'
-              fontSize={{ base: "4xl", md: "7xl" }}
+              fontSize={{ base: "4xl", md: "6xl" }}
               fontWeight='extrabold'
             >
               {currentTranslations.title}
@@ -52,7 +52,7 @@ function App() {
           <HStack spacing='24px' align='center' justifyContent='center'>
             <a href="https://github.com/juanpfrancoS"><FaGithub fontSize='3em'/></a>
             <a href="https://co.linkedin.com/in/juanpfrancos"><FaLinkedin fontSize='3em'/></a> 
-            <a href="https://api.whatsapp.com/send?phone=573166245103"><FaWhatsapp fontSize='3em'/></a>
+            <a href="https://api.whatsapp.com/send?phone=351925237446"><FaWhatsapp fontSize='3em'/></a>
           </HStack>
         </Box>
 
