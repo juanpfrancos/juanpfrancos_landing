@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Text, Box, ButtonGroup, Grid } from '@chakra-ui/react'
+import { Text, Box, ButtonGroup, Grid, HStack } from '@chakra-ui/react'
+import { TypeAnimation } from 'react-type-animation';
 import ReactFlagsSelect from "react-flags-select";
-import { FaWhatsapp, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa6";
 import US from './langs/us';
 import ES from './langs/es';
 import PT from './langs/pt';
@@ -21,9 +22,6 @@ function App() {
   const currentTranslations = translations[language];
 
   return (
-
-
-
       <Box p={0}>
       <Grid templateColumns={{ base: '1fr', lg: '1fr 1fr' }} gap={4} alignItems="center">
         <Box>
@@ -38,24 +36,25 @@ function App() {
             placeholder={language}
             />
           </ButtonGroup>
-          <Text
-            bgGradient='linear(to-l, #000, #fff)'
-            bgClip='text'
-            fontSize='6xl'
-            fontWeight='extrabold'
-          >
-          {currentTranslations.title}
-          </Text>
-          <p>{currentTranslations.subtitle}</p>
-          <p>{currentTranslations.about}</p>
 
-
-          <Box id="socialb" class="col-sm">
-            <a href="https://www.instagram.com/juanpfrancos/"><FaInstagram/></a>
-            <a href="https://twitter.com/JuanpFrancoS"><FaTwitter/></a>
-            <a href="https://co.linkedin.com/in/juanpfrancos"><FaLinkedin/></a> 
-            <a href="https://api.whatsapp.com/send?phone=573166245103"><FaWhatsapp/></a>
+          <Box maxW="800px" mx="auto" px={{ base: 4, md: 6 }} py={{ base: 8, md: 12 }}>
+            <Text
+              bgGradient='linear(to-l, #000, #fff)'
+              bgClip='text'
+              fontSize={{ base: "4xl", md: "7xl" }}
+              fontWeight='extrabold'
+            >
+              {currentTranslations.title}
+            </Text>            
+            <Text fontSize={{ base: "lg", md: "xl" }} color="gray.600">
+              {currentTranslations.about}
+            </Text>
           </Box>
+          <HStack spacing='24px' align='center' justifyContent='center'>
+            <a href="https://github.com/juanpfrancoS"><FaGithub fontSize='3em'/></a>
+            <a href="https://co.linkedin.com/in/juanpfrancos"><FaLinkedin fontSize='3em'/></a> 
+            <a href="https://api.whatsapp.com/send?phone=573166245103"><FaWhatsapp fontSize='3em'/></a>
+          </HStack>
         </Box>
 
         {/* Columna de imagen */}
