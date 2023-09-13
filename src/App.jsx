@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Text, Box, ButtonGroup, Grid, HStack } from '@chakra-ui/react'
 import ReactFlagsSelect from "react-flags-select";
 import { FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa6";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import US from './langs/us';
 import ES from './langs/es';
 import PT from './langs/pt';
@@ -60,16 +61,20 @@ function App() {
         <Box
           display={{ base: 'none', lg: 'block' }}
           gridColumn={{ base: '1', lg: '2' }}
+          style={{
+            display: 'flex',
+            justifyContent: 'flex-end',
+            alignItems: 'center',
+            height: '100%',
+          }}
         >
-          <img src="https://raw.githubusercontent.com/juanpfrancos/juanpfrancos/master/Juanp.png" alt="Me" style={{ width: '100%', margin: '0', padding: '0' }} />
-        </Box>
-
-        {/* Imagen para dispositivos móviles */}
-        <Box
-          display={{ base: 'block', lg: 'none' }}
-          gridColumn={{ base: '1', lg: '2' }}
-        >
-          <img src="https://raw.githubusercontent.com/juanpfrancos/juanpfrancos/master/Juanp.png" alt="Me" style={{ width: '100%', margin: '0', padding: '0' }} />
+          <LazyLoadImage 
+          src="https://raw.githubusercontent.com/juanpfrancos/curriculum/master/original.png" 
+          alt="Me" 
+          style={{ width: '100%', margin: '0', padding: '0'}} 
+          placeholderSrc="https://raw.githubusercontent.com/juanpfrancos/curriculum/master/reduced.jpg"
+          effect="blur"
+          />
         </Box>
       </Grid>
     </Box>
