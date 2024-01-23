@@ -65,7 +65,7 @@ function App() {
         <HStack spacing='24px' align='center' justifyContent='center'  style={{paddingBottom: '2em'}} >
           <a href="https://github.com/juanpfrancoS"><FaGithub fontSize='3em'/></a>
           <a href="https://co.linkedin.com/in/juanpfrancos"><FaLinkedin fontSize='3em'/></a> 
-          <a href="https://api.whatsapp.com/send?phone=351925237446"><FaWhatsapp fontSize='3em'/></a>
+          <a href="https://api.whatsapp.com/send?phone=573166245103"><FaWhatsapp fontSize='3em'/></a>
         </HStack>
     </Box>
     </>
