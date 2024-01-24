@@ -1,0 +1,50 @@
+{
+  "hash": "0fafb499",
+  "browserHash": "65cd2a3e",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "272fbe07",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "3362e36f",
+      "needsInterop": true
+    },
+    "@chakra-ui/react": {
+      "src": "../../node_modules/@chakra-ui/react/dist/index.mjs",
+      "file": "@chakra-ui_react.js",
+      "fileHash": "2ff5437c",
+      "needsInterop": false
+    },
+    "react-flags-select": {
+      "src": "../../node_modules/react-flags-select/build/index.esm.js",
+      "file": "react-flags-select.js",
+      "fileHash": "3abb1bc1",
+      "needsInterop": false
+    },
+    "react-icons/fa6": {
+      "src": "../../node_modules/react-icons/fa6/index.esm.js",
+      "file": "react-icons_fa6.js",
+      "fileHash": "6e7880c8",
+      "needsInterop": false
+    },
+    "react-lazy-load-image-component": {
+      "src": "../../node_modules/react-lazy-load-image-component/build/index.js",
+      "file": "react-lazy-load-image-component.js",
+      "fileHash": "860eb163",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-W35RGOJH": {
+      "file": "chunk-W35RGOJH.js"
+    },
+    "chunk-2FATVHAI": {
+      "file": "chunk-2FATVHAI.js"
+    }
+  }
+}
